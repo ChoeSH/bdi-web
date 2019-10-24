@@ -21,8 +21,14 @@ String name= request.getParameter("name");
 String age= request.getParameter("age");
 String etc= request.getParameter("etc");
 
+String[]hobbies = request.getParameterValues("hobby");
+String hobby="";
+for(int i=0; i<hobbies.length; i++){
+	hobby +=hobbies[i]+",";
+}
+
 String sql="update user_info"; 
-sql+=" set ui_id='"+id+"',ui_pwd='"+pwd+"',ui_name='"+name+"',ui_age="+age+",ui_etc='"+etc+"'";
+sql+=" set ui_id='"+id+"',ui_pwd='"+pwd+"',ui_name='"+name+"',ui_age="+age+",ui_etc='"+etc+"',hobby='"+hobby+"'";
 sql+=" where ui_num=?";
 
 System.out.println(sql);

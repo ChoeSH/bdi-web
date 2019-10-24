@@ -17,7 +17,7 @@
 	age:<input type="number"name="age"><br>
 	star_rate:<input type="text"name="star_rate"><br>
 	
-	<a href="/bdi-web/jsp/movie/movie-insert_ok.jsp"><button>입력하기</button></a>
+	<button>입력하기</button>
 </form>
 </body>
 </html>
