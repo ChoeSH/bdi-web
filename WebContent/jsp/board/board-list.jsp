@@ -55,7 +55,7 @@ sql+="order by bi_num desc";
 
 Connection con = DBCon.getCon();
 PreparedStatement ps= con.prepareStatement(sql);
-
+ 
 if(search!=null){
 	if("1".equals(search) || "2".equals(search) || "3".equals(search)){
 		ps.setString(1,"%" + searchStr + "%");

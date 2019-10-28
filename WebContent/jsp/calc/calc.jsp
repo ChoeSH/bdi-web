@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%!						//<%@는 자바의 import 같은 역할
-public void test(){		//메소드를 선언하기 위해서는 <%!를 사용한다. 
+<%!						//<%@는 자바의 import 같은 역할/	<%!는 메소드를 선언하는 역할
+public void test(){		
 System.out.println("ㅎ하하하하하");		//이 println문은 console에서만 출력된다.
 }
 %>
@@ -43,7 +43,7 @@ if(num1 !=null){
 }
 %>
 <form>
-	숫자1:<input type="number"name="num1"value="">
+	숫자1:<input type="number"name="num1">
 	<select name="op">
 	<option value="">선택</option>
 	<option value="+">더하기</option>
@@ -51,10 +51,24 @@ if(num1 !=null){
 	<option value="*">곱하기</option> 
 	<option value="/">나누기</option> 
 	</select>
-	숫자2:<input type="number"name="num2"value="">
+	숫자2:<input type="number"name="num2">
 	=
 	<input type="number"name="result"value="<%=result%>">
-	<button>계산하기</button>
+	<button onclick="calc();">계산하기</button>
 </form>
+
+<script>
+function calc(){
+	var n1 = document.getElementById("num1");
+	var n2 = document.getElementById("num2");
+	alert(parseInt(n1.value)+parseInt(n2.value));
+	
+	n1=parseInt(n1.value);
+	n2=parseInt(n2.value);
+	
+	alert(result);
+}
+</script>
+ 
 </body>
 </html>
