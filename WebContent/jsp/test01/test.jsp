@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method="post" action="/bdi/jsp/test01/login.jsp" id="loginForm">			<%--post방식은 url이 바뀌지 않는다.--%>
+<form method="post" action="/bdi/jsp/test01/login.jsp" id="loginForm">	<%--post방식은 url이 바뀌지 않는다.--%>
 아이디 : <input type="text" name="id" id="id"><br>
 비밀번호 : <input type="password" name="pwd" id="pwd"><br>
 <button type="button" onclick="login()">로그인</button>

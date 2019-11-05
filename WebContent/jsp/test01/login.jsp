@@ -32,5 +32,7 @@ if(id!=null){
 %>
 <br><br>
 <a href="/bdi/jsp/test01/test.jsp"><button>돌아가기</button></a>
+<br><br>
+<a href="/bdi/jsp/test01/join_list.jsp"><button>리스트로</button></a>
 </body>
 </html>
